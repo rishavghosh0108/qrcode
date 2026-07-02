@@ -1,1 +1,69 @@
 /* You can add global styles to this file, and also import other style files */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 18px; color: var(--text); text-decoration: none; }
+
+.logo-mark { width: 32px; height: 32px; background: var(--primary); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.logo-mark svg { width: 18px; height: 18px; fill: none; stroke: white; stroke-width: 2; }
+
+/* SECTION HEADINGS */
+.section-label { text-align: center; font-size: 13px; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
+.section-title { text-align: center; font-size: 36px; font-weight: 700; letter-spacing: -.5px; margin-bottom: 12px; }
+.section-subtitle { text-align: center; font-size: 18px; color: var(--secondary); margin-bottom: 56px; }
+
+
+/* CARDS */
+.card { background: var(--surface); border-radius: var(--radius-card); box-shadow: var(--shadow); border: 1px solid var(--border); padding: 32px; }
+.card-title { font-size: 18px; font-weight: 600; margin-bottom: 24px; }
+
+/* GENERATE BUTTON */
+.btn-generate { width: 100%; padding: 16px; background: var(--primary); color: white; border: none; border-radius: var(--radius-btn); font-size: 16px; font-weight: 600; cursor: pointer; font-family: inherit; transition: all .2s; display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 8px; }
+.btn-generate:hover { background: var(--primary-dark); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(79,70,229,.35); }
+.btn-generate:active { transform: translateY(0); }
+
+/* FEATURES */
+.features-section { padding: 96px 0; }
+.features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.feature-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-card); padding: 28px; transition: all .2s; }
+.feature-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.feature-icon { width: 48px; height: 48px; background: var(--primary-light); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 16px; }
+.feature-card h3 { font-size: 16px; font-weight: 600; margin-bottom: 8px; }
+.feature-card p { font-size: 14px; color: var(--secondary); line-height: 1.6; }
+
+
+/* DIVIDERS & LABELS */
+.section-divider { border: none; border-top: 1px solid var(--border); margin: 0; }
+.divider-label { font-size: 13px; color: var(--secondary); font-weight: 600; text-transform: uppercase; letter-spacing: .5px; margin: 24px 0 16px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --primary: #4F46E5;
+  --primary-dark: #3730A3;
+  --primary-light: #EEF2FF;
+  --bg: #F8FAFC;
+  --surface: #FFFFFF;
+  --border: #E2E8F0;
+  --text: #0F172A;
+  --secondary: #64748B;
+  --success: #10B981;
+  --danger: #EF4444;
+  --shadow: 0 8px 30px rgba(15,23,42,.08);
+  --radius-card: 20px;
+  --radius-btn: 12px;
+  --radius-input: 12px;
+}
+
+[data-theme="dark"] {
+  --bg: #0F172A;
+  --surface: #1E293B;
+  --border: #334155;
+  --text: #F1F5F9;
+  --secondary: #94A3B8;
+  --primary-light: #1E1B4B;
+  --shadow: 0 8px 30px rgba(0,0,0,.3);
+}
+
+html { scroll-behavior: smooth; }
+section[id], div[id="generatorCard"] { scroll-margin-top: 80px; }
+body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; transition: background .2s, color .2s; }

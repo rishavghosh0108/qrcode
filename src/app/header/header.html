@@ -1,0 +1,26 @@
+<!-- HEADER -->
+<header class="header">
+  <div class="header-inner">
+    <a class="logo" href="#">
+      <div class="logo-mark">
+        <svg viewBox="0 0 18 18">
+          <rect x="2" y="2" width="6" height="6" rx="1"/>
+          <rect x="10" y="2" width="6" height="6" rx="1"/>
+          <rect x="2" y="10" width="6" height="6" rx="1"/>
+          <rect x="12" y="12" width="4" height="4" rx=".5"/>
+          <rect x="10" y="10" width="2" height="2" rx=".5"/>
+        </svg>
+      </div>
+      GenCustomQR
+    </a>
+    <div class="header-actions">
+      <nav class="nav">
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#pricing">Pricing</a>
+        <a class="nav-link" href="#generatorCard">Build</a>
+        <!-- <a class="nav-link" href="https://github.com" target="_blank" rel="noopener">GitHub</a> -->
+      </nav>
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle dark mode" (click)="updateTheme()">{{ isDark() ? '☀️' : '🌙' }}</button>
+    </div>
+  </div>
+</header>
