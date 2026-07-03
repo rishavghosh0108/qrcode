@@ -7,3 +7,6 @@
 .footer-link:hover { color: var(--primary); }
 .footer-bottom { margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--border); display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 12px; }
 .footer-bottom p { font-size: 13px; color: var(--secondary); }
+.heart {
+  color: #e63946; /* Red */
+}
