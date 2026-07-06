@@ -67,3 +67,22 @@
 html { scroll-behavior: smooth; }
 section[id], div[id="generatorCard"] { scroll-margin-top: 80px; }
 body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; transition: background .2s, color .2s; }
+
+/* Responsive rules */
+@media (max-width: 900px) {
+  .container { padding: 0 16px; }
+  .section-title { font-size: 30px; }
+  .section-subtitle { font-size: 16px; margin-bottom: 40px; }
+  .features-grid { grid-template-columns: repeat(2, 1fr); gap: 18px; }
+  .card { padding: 24px; }
+}
+
+@media (max-width: 600px) {
+  .container { padding: 0 12px; }
+  .section-title { font-size: 24px; }
+  .section-subtitle { font-size: 14px; margin-bottom: 28px; }
+  .features-grid { grid-template-columns: 1fr; gap: 16px; }
+  .card { padding: 20px; }
+  .btn-generate { padding: 12px; font-size: 15px; }
+  .feature-icon { width: 44px; height: 44px; }
+}

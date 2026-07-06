@@ -76,3 +76,14 @@
 	.download-panel-header { flex-direction: column; }
 }
 
+@media (max-width: 900px) {
+	.generator-grid { grid-template-columns: 1fr; gap: 20px; }
+	.generator-section { padding: 56px 0 72px; }
+}
+
+@media (max-width: 600px) {
+	.generator-grid { grid-template-columns: 1fr; gap: 16px; }
+	.form-input, .form-select { padding: 10px 12px; font-size: 14px; }
+	.download-grid { grid-template-columns: 1fr; }
+}
+
